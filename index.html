@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What to Eat</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script defer src="./src/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><h2>What to Eat?</h2></div>
+      <div class="innerContainer" style="border-top: 1px solid black">
+        <div style="margin: 5px">
+          <form id="foodName">
+            <div>Preferred Food:</div>
+            <input type"text" id="foodInput" title="Alphanumeric and comma only" placeholder="eg Chicken Rice, Laksa">
+            <button type="button" id="submitBtn">Submit</button>
+          </form>
+        </div>
+        <div class="break"></div>
+        <div style="margin: 5px">
+          <form id="foodListName">
+            <div>Food List:</div>
+            <textarea
+              rows="5"
+              cols="30"
+              id="foodListBox"
+              name="foodListBox[]"
+              placeholder="Read only. Your input will appear here."
+              readonly
+            ></textarea>
+            <button type="button" id="clearBtn">Clear</button>
+          </form>
+        </div>
+        <div class="innerRowContainer" style="min-height: 80px; border-top: 1px solid black">
+          <div class="innerRowTwoContainer">
+            <div style="margin: 5px">No repeated food for last:</div>
+            <div style="margin: 5px">
+              <input type"number" id="dayInput"> seconds
+              <div style="margin: 10px 0 5px 0"><button type="button" id="randomBtn">Randomize!</button></div>
+            </div>
+          </div>
+          <div style="text-align: center; padding: 10px; font-weight: bold; font-size: 15px">
+            Your Fated Food:
+            <div id="randomText"></div>
+          </div>
+        </div>
+        <div style="text-align: center; width: 100%; padding: 5px; border-top: 1px solid black">
+          Can't decide? Randomize your appetite from a list of preselected Singaporeans' favourite!
+          <div style="padding: 10px">
+            <span><button type="button" id="breakfast">Breakfast</button></span>
+            <span><button type="button" id="lunch">Lunch</button></span>
+            <span><button type="button" id="dinner">Dinner</button></span>
+          </div>
+        </div>
+      </div>
+      <div class="innerContainer">
+        <div class="resultContainer" style="padding: 5px">
+          <div id="test" style="padding: 5px; text-align: center">
+            Food Log
+            <ul id="logFood"></ul>
+          </div>
+          <div style="padding: 5px; text-align: right">
+            Logged Time
+            <ul id="logTime"></ul>
+          </div>
+          <div class="delete" style="padding: 5px; text-align: center">
+            Delete
+            <ul id="logDelete"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
