@@ -1,7 +1,10 @@
 body {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 14px;
-  background-color: beige;
+  background-image: url("/img/bg.jpeg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .container {
@@ -14,7 +17,7 @@ body {
   border-radius: 20px;
   box-shadow: 2px 2px;
   background-color: white;
-  opacity: 95%;
+  opacity: 90%;
 }
 
 .header {
