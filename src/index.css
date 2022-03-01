@@ -1,6 +1,7 @@
 body {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 14px;
+  background-color: beige;
 }
 
 .container {
@@ -10,6 +11,10 @@ body {
   width: 90%;
   border: 1px solid black;
   border-collapse: collapse;
+  border-radius: 20px;
+  box-shadow: 2px 2px;
+  background-color: white;
+  opacity: 95%;
 }
 
 .header {
